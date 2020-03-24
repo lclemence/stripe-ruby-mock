@@ -34,10 +34,14 @@ module StripeMock
 
           ]
         },
-        verification: {
-          fields_needed: [],
-          due_by: nil,
-          contacted: false
+        requirements: {
+          eventually_due: [],
+          currently_due: [],
+          past_due: [],
+          current_deadline: nil,
+          disabled_reason: nil,
+          errors: [],
+          pending_verification: []
         },
         transfer_schedule: {
           delay_days: 7,
